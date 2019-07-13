@@ -1,0 +1,14 @@
+﻿@model Lab21.Models.Account
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@if (Model.FirstName != null)
+{
+    <div>Hello @Model.FirstName!</div>
+}
+else
+{
+    <a asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+}
